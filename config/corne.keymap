@@ -45,12 +45,12 @@
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
 //                      │ ESC  │ TAB  │ RET  ║ BKSP │ SPC  │ CAPS │
-//                      │ (L5) │      │ (L2) ║      │ (L1) │      │
+//                      │ (L5) │ (L2) │      ║      │ (L1) │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
 &trans   &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &mt_ LBKT O  &mt_ RBKT P  &trans
 &trans   &mt_ LSHFT A &mt_ LCTRL S &mt_ LALT D  &mt_ LGUI F  &kp G        &kp H        &mt_ RGUI J  &mt_ RALT K  &mt_ RCTRL L &mt_ RSHFT SEMI &trans
 &trans   &lt_ 4 Z     &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT      &lt_ 4 FSLH  &trans
-                                   &lt_ 5 ESC   &kp TAB      &lt_ 2 RET   &kp BKSP     &lt_ 1 SPC   &caps_word
+                                   &lt_ 5 ESC   &lt_ 2 TAB   &kp RET   &kp BKSP     &lt_ 1 SPC   &caps_word
                     >;
             };
 
