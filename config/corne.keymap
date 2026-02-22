@@ -79,20 +79,19 @@
             raise_layer {
                     bindings = <
 // ┌──────┬──────┬──────┬──────┬──────┬──────╥──────┬──────┬──────┬──────┬──────┬──────┐
-// │      │  ~   │  ^   │  @   │  $   │  %   ║  &   │  /   │  \   │  |   │  `   │      │
+// │      │      │      │      │      │      ║      │  {   │  }   │      │      │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │  ⌥U  │  <   │  [   │  (   │  {   ║  -   │  _   │  :   │  ;   │  #   │      │
-// │      │ (L3) │(SHFT)│(ALT) │(GUI) │(CTL) ║(CTL) │(GUI) │(ALT) │(SHFT)│ (L3) │      │
+// │      │      │      │      │      │      ║      │  [   │  ]   │      │      │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │      │  >   │  ]   │  )   │  }   ║  +   │  =   │  ?   │  !   │  "   │      │
+// │      │      │      │      │      │      ║      │      │      │      │      │      │
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
-//                      │      │      │      ║      │      │  ⌥⌫  │
+//                      │      │      │      ║      │      │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans &kp LS(GRAVE) &kp LS(N6) &kp LS(N2) &kp LS(N4) &kp LS(N5) &kp LS(N7) &kp FSLH &kp BSLH &kp LS(BSLH) &kp GRAVE &trans
-&trans &lt_ 3 LA(U) &mt_ LSHFT LS(COMMA) &mt_ LALT LBKT &mt_ LGUI LS(N9) &mt_ LCTRL LS(LBKT) &mt_ LCTRL KP_MINUS &mt_ LGUI LS(MINUS) &mt_ LALT LS(SEMI) &mt_ LSHFT SEMI &lt_ 3 LS(N3) &trans
-&trans &trans &kp LS(DOT) &kp RBKT &kp LS(N0) &kp LS(RBKT) &kp LS(EQUAL) &kp EQUAL &kp LS(FSLH) &kp LS(N1) &kp LS(SQT) &trans
-&trans &trans &trans &trans &trans &kp LA(BKSP)
+&trans   &trans       &trans       &trans       &trans       &trans       &trans       &kp LS(LBKT) &kp LS(RBKT) &trans       &trans       &trans
+&trans   &trans       &trans       &trans       &trans       &trans       &trans       &kp LBKT     &kp RBKT     &trans       &trans       &trans
+&trans   &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
+                                   &trans       &trans       &trans       &trans       &trans       &trans
                     >;
             };
 
