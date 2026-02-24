@@ -22,6 +22,11 @@
             key-positions = <31 32>;
             bindings = <&vim_save>;
         };
+        combo_scroll_lock {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp SLCK>;
+        };
     };
 
     macros {
@@ -84,7 +89,7 @@
 &trans   &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &mt_ LBKT O  &mt_ RBKT P  &trans
 &trans   &mt_ LSHFT A &mt_ LCTRL S &mt_ LALT D  &mt_ LGUI F  &kp G        &kp H        &mt_ RGUI J  &mt_ RALT K  &mt_ RCTRL L &mt_ RSHFT SEMI &trans
 &trans   &lt_ 4 Z     &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT      &lt_ 4 FSLH  &trans
-                                   &lt_ 5 ESC   &lt_ 2 TAB   &kp RET   &kp BKSP     &lt_ 1 SPC   &caps_word
+                                   &lt_ 3 ESC   &lt_ 2 TAB   &kp RET   &kp BKSP     &lt_ 1 SPC   &caps_word
                     >;
             };
 
@@ -131,22 +136,22 @@
             };
 
 // Layer 3
-            hyper_layer {
+            numpad_layer {
                     bindings = <
 // ┌──────┬──────┬──────┬──────┬──────┬──────╥──────┬──────┬──────┬──────┬──────┬──────┐
-// │      │ H(Q) │ H(W) │ H(F) │ H(P) │ H(G) ║ H(1) │ H(2) │ H(3) │ H(4) │ H(5) │      │
+// │      │      │      │      │      │      ║  1   │  2   │  3   │  4   │  5   │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │ H(A) │ H(R) │ H(S) │ H(T) │ H(D) ║      │ H(←) │ H(↑) │ H(→) │      │      │
+// │      │      │      │      │      │      ║  6   │  7   │  8   │  9   │  0   │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │ H(Z) │ H(X) │ H(C) │ H(V) │ H(B) ║      │ H(;) │ H(↓) │ H(') │      │      │
+// │      │      │      │      │      │      ║  +   │  -   │  *   │  .   │  /   │      │
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
-//                      │H(ESC)│      │H(TAB)║H(RET)│H(SPC)│H(BKS)│
+//                      │      │      │      ║      │      │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans &kp LA(LS(LC(LG(Q)))) &kp LA(LS(LC(LG(W)))) &kp LA(LS(LC(LG(F)))) &kp LA(LS(LC(LG(P)))) &kp LA(LS(LC(LG(G)))) &kp LA(LS(LC(LG(N1)))) &kp LA(LS(LC(LG(N2)))) &kp LA(LS(LC(LG(N3)))) &kp LA(LS(LC(LG(N4)))) &kp LA(LS(LC(LG(N5)))) &trans
-&trans &kp LA(LS(LC(LG(A)))) &kp LA(LS(LC(LG(R)))) &kp LA(LS(LC(LG(S)))) &kp LA(LS(LC(LG(T)))) &kp LA(LS(LC(LG(D)))) &trans &kp LA(LS(LC(LG(LEFT)))) &kp LA(LS(LC(LG(UP)))) &kp LA(LS(LC(LG(RIGHT)))) &trans &trans
-&trans &kp LA(LS(LC(LG(Z)))) &kp LA(LS(LC(LG(X)))) &kp LA(LS(LC(LG(C)))) &kp LA(LS(LC(LG(V)))) &kp LA(LS(LC(LG(B)))) &trans &kp LA(LS(LC(LG(SEMI)))) &kp LA(LS(LC(LG(DOWN)))) &kp LA(LS(LC(LG(SQT)))) &trans &trans
-&kp LA(LS(LC(LG(ESC)))) &trans &kp LA(LS(LC(LG(TAB)))) &kp LA(LS(LC(LG(RET)))) &kp LA(LS(LC(LG(SPC)))) &kp LA(LS(LC(LG(BKSP))))
+&trans &trans &trans &trans &trans &trans   &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &kp KP_N5    &trans
+&trans &trans &trans &trans &trans &trans   &kp KP_N6    &kp KP_N7    &kp KP_N8    &kp KP_N9    &kp KP_N0    &trans
+&trans &trans &trans &trans &trans &trans   &kp KP_PLUS  &kp KP_MINUS &kp KP_MULTIPLY &kp KP_DOT &kp KP_DIVIDE &trans
+&trans &trans &trans &trans &trans &trans
                     >;
             };
 
