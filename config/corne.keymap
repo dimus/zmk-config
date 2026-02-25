@@ -120,7 +120,7 @@
 // ┌──────┬──────┬──────┬──────┬──────┬──────╥──────┬──────┬──────┬──────┬──────┬──────┐
 // │      │  F1  │  F2  │  F3  │  F4  │  F5  ║      │  {   │  }   │      │      │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │  F6  │  F7  │  F8  │  F9  │  F10 ║      │  [   │  ]   │  <   │  >   │      │
+// │      │  F6  │  F7  │  F8  │  F9  │  F10 ║  '"  │  [   │  ]   │  <   │  >   │      │
 // │      │(SHFT)│(CTL) │(ALT) │(GUI) │      ║      │(GUI) │(ALT) │(CTL) │(SHFT)│      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │  F11 │  F12 │      │      │      ║      │  (   │  )   │      │      │      │
@@ -128,10 +128,10 @@
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
 //                      │      │      │      ║      │      │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &trans       &kp LS(LBKT) &kp LS(RBKT) &trans       &trans       &trans
-&trans   &mt_ LSHFT F6 &mt_ LCTRL F7 &mt_ LALT F8 &mt_ LGUI F9 &kp F10      &trans       &mt_ RGUI LBKT &mt_ RALT RBKT &mt_ RCTRL LS(COMMA) &mt_ RSHFT LS(DOT) &trans
-&trans   &kp F11      &kp F12      &trans       &trans       &trans       &trans       &kp LPAR     &kp RPAR     &trans       &trans       &trans
-                                   &trans       &trans       &trans       &trans       &trans       &trans
+&trans   &kp F1        &kp F2        &kp F3       &kp F4       &kp F5       &trans       &kp LS(LBKT)   &kp LS(RBKT)   &trans               &trans             &trans
+&trans   &mt_ LSHFT F6 &mt_ LCTRL F7 &mt_ LALT F8 &mt_ LGUI F9 &kp F10      &kp SQT      &mt_ RGUI LBKT &mt_ RALT RBKT &mt_ RCTRL LS(COMMA) &mt_ RSHFT LS(DOT) &trans
+&trans   &kp F11       &kp F12       &trans       &trans       &trans       &trans       &kp LPAR       &kp RPAR       &trans               &trans             &trans
+                                     &trans       &trans       &trans       &trans       &trans         &trans
                     >;
             };
 
