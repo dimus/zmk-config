@@ -89,7 +89,7 @@
 &trans   &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &mt_ LBKT O  &mt_ RBKT P  &trans
 &trans   &mt_ LSHFT A &mt_ LCTRL S &mt_ LALT D  &mt_ LGUI F  &kp G        &kp H        &mt_ RGUI J  &mt_ RALT K  &mt_ RCTRL L &mt_ RSHFT SEMI &trans
 &trans   &lt_ 4 Z     &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT      &lt_ 4 FSLH  &trans
-                                   &lt_ 3 LGUI  &lt_ 2 TAB   &kp RET   &kp BKSP     &lt_ 1 SPC   &caps_word
+                                   &lt_ 3 ESC   &lt_ 2 TAB   &kp RET      &kp BKSP     &lt_ 1 SPC   &caps_word
                     >;
             };
 
@@ -107,10 +107,10 @@
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
 //                      │      │      │      ║      │      │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans   AS(N1)               AS(N2)           AS(N3)           AS(N4)              AS(N5)       AS(N6)       AS(N7)           AS(N8)       AS(N9)           AS(N0)          &trans
-&trans   &mt_ LSHFT LS(MINUS) &mt_ LCTRL MINUS &mt_ LALT EQUAL  &mt_ LGUI LS(EQUAL) &kp LS(GRAVE) &kp LEFT     &mt_ RGUI DOWN   &mt_ RALT UP &mt_ RCTRL RIGHT &mt_ RSHFT SQT &trans
-&trans   &kp LS(PSCRN)        &kp GRAVE        &kp SQT           &kp LS(SQT)         AS(BSLH)     &kp DEL      &kp HOME         &kp PG_DN    &kp PG_UP        &kp END         &trans
-                                               &trans            &trans              &trans       &trans       &trans           &trans
+&trans   AS(N1)               AS(N2)           AS(N3)            AS(N4)              AS(N5)        AS(N6)       AS(N7)           AS(N8)       AS(N9)     AS(N0)          &trans
+&trans   &mt_ LSHFT LS(MINUS) &mt_ LCTRL MINUS &mt_ LALT EQUAL   &mt_ LGUI LS(EQUAL) &kp LS(GRAVE) &kp LEFT     &kp DOWN         &kp UP       &kp RIGHT  &mt_ RSHFT SQT &trans
+&trans   &kp LS(PSCRN)        &kp GRAVE        &kp SQT           &kp LS(SQT)         AS(BSLH)      &kp DEL      &kp HOME         &kp PG_DN    &kp PG_UP  &kp END         &trans
+                                               &trans            &trans              &trans        &trans       &trans           &trans
                     >;
             };
 
