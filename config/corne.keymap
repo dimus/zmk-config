@@ -83,7 +83,7 @@
 // │      │ (L4) │      │      │      │      ║      │      │      │      │ (L4) │      │
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
-//                      │ GUI  │ TAB  │ RET  ║ BKSP │ SPC  │ CAPS │
+//                      │ ESC  │ TAB  │ RET  ║ BKSP │ SPC  │ CAPS │
 //                      │ (L3) │ (L2) │      ║      │ (L1) │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
 &trans   &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &mt_ LBKT O  &mt_ RBKT P  &trans
@@ -100,7 +100,7 @@
 // │      │  1!  │  2@  │  3#  │  4$  │  5%  ║  6^  │  7&  │  8*  │  9(  │  0)  │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │  _   │  -   │  =   │  +   │  ~   ║  ←   │  ↓   │  ↑   │  →   │  '   │      │
-// │      │(SHFT)│(CTL) │(ALT) │(GUI) │      ║      │(GUI) │(ALT) │(CTL) │(SHFT)│      │
+// │      │(SHFT)│(CTL) │(ALT) │(GUI) │      ║      │      │      │      │(SHFT)│      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │sPRNT │  `   │  '   │  "   │  \|  ║ DEL  │ HOME │ PGDN │ PGUP │ END  │      │
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
@@ -142,16 +142,17 @@
 // │      │ ⌘1   │ ⌘2   │ ⌘3   │ ⌘4   │ ⌘5   ║  1   │  2   │  3   │  4   │  5   │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │ ⌘6   │ ⌘7   │ ⌘8   │ ⌘9   │ ⌘0   ║  6   │  7   │  8   │  9   │  0   │      │
+// │      │      │      │      │      │      ║      │(GUI) │(ALT) │(CTL) │(SHFT)│      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │      │      │      │      │      ║  +   │  -   │  *   │  .   │  /   │      │
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
 //                      │      │      │      ║      │      │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)   &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &kp KP_N5    &trans
-&trans &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(N0)   &kp KP_N6    &kp KP_N7    &kp KP_N8    &kp KP_N9    &kp KP_N0    &trans
-&trans &trans &trans &trans &trans &trans   &kp KP_PLUS  &kp KP_MINUS &kp KP_MULTIPLY &kp KP_DOT &kp KP_DIVIDE &trans
-&trans &trans &trans &trans &trans &trans
+&trans &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)   &kp KP_N1    &kp KP_N2          &kp KP_N3          &kp KP_N4           &kp KP_N5           &trans
+&trans &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(N0)   &kp KP_N6    &mt_ RGUI KP_N7    &mt_ RALT KP_N8    &mt_ RCTRL KP_N9    &mt_ RSHFT KP_N0    &trans
+&trans &trans     &trans     &trans     &trans     &trans       &kp KP_PLUS  &kp KP_MINUS       &kp KP_MULTIPLY    &kp KP_DOT          &kp KP_DIVIDE       &trans
+                             &trans     &trans     &trans       &trans       &trans             &trans
                     >;
             };
 
