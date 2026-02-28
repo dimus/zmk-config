@@ -61,8 +61,8 @@
             label = "MOD_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
             bindings = <&kp>, <&kp>;
         };
         lt_: custom_layer_tap {
@@ -70,8 +70,8 @@
             label = "LAYER_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
             bindings = <&mo>, <&kp>;
         };
     };
