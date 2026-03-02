@@ -84,21 +84,21 @@
                     bindings = <
 // ┌──────┬──────┬──────┬──────┬──────┬──────╥──────┬──────┬──────┬──────┬──────┬──────┐
 // │      │  Q   │  W   │  E   │  R   │  T   ║  Y   │  U   │  I   │  O   │  P   │      │
-// │      │      │      │      │      │      ║      │      │      │ ([)  │ (])  │      │
+// │      │ (1)  │ (2)  │ (3)  │ (4)  │ (5)  ║ (6)  │ (7)  │ (8)  │ (9)  │ (0)  │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │  A   │  S   │  D   │  F   │  G   ║  H   │  J   │  K   │  L   │  ;   │      │
 // │      │(SHFT)│(CTL) │(ALT) │(GUI) │      ║      │(GUI) │(ALT) │(CTL) │(SHFT)│      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │  Z   │  X   │  C   │  V   │  B   ║  N   │  M   │  ,   │  .   │  /   │      │
-// │      │ (L4) │      │      │      │      ║      │      │      │      │ (L4) │      │
+// │      │ (L4) │      │      │      │      ║      │      │      │ ([)  │ (])  │      │
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
 //                      │ ESC  │ TAB  │ RET  ║ BKSP │ SPC  │ CAPS │
 //                      │ (L3) │ (L2) │      ║      │ (L1) │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans   &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &mt_ LBKT O  &mt_ RBKT P  &trans
+&trans   &mt_ N1 Q    &mt_ N2 W    &mt_ N3 E    &mt_ N4 R    &mt_ N5 T    &mt_ N6 Y    &mt_ N7 U    &mt_ N8 I    &mt_ N9 O    &mt_ N0 P    &trans
 &trans   &mt_ LSHFT A &mt_ LCTRL S &mt_ LALT D  &mt_ LGUI F  &kp G        &kp H        &mt_ RGUI J  &mt_ RALT K  &mt_ RCTRL L &mt_ RSHFT SEMI &trans
-&trans   &lt_ 4 Z     &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp DOT      &lt_ 4 FSLH  &trans
+&trans   &lt_ 4 Z     &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &mt_ LBKT DOT &mt_ RBKT FSLH &trans
                                    &lt_ 3 ESC   &lt_ 2 TAB   &kp RET      &kp BKSP     &lt_ 1 SPC   &caps_word
                     >;
             };
