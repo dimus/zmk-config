@@ -69,14 +69,6 @@
     };
 
     behaviors {
-        mmv_accel: mouse_move_accel {
-            compatible = "zmk,behavior-mouse-move";
-            #binding-cells = <1>;
-            time-to-max-speed-ms = <400>;
-            acceleration-exponent = <1>;
-            delay-ms = <0>;
-        };
-
         // Customized mod_tap and layer_tap:
         // - mod_tap is 'tap preferred' as it's used on home-row
         // - layer_tap uses balanced flavor
@@ -224,8 +216,8 @@
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
 //                      │      │      │      ║      │      │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans &trans    &trans    &trans    &trans    &msc SCRL_UP   &trans                             &mmv_accel (MOVE_LEFT|MOVE_UP)   &trans               &trans              &mmv_accel (MOVE_RIGHT|MOVE_UP)   &trans
-&trans &trans    &mkp RCLK &mkp MCLK &mkp LCLK &msc SCRL_DOWN &mmv_accel (MOVE_LEFT|MOVE_DOWN)  &mmv_accel MOVE_LEFT             &mmv_accel MOVE_DOWN &mmv_accel MOVE_UP  &mmv_accel (MOVE_RIGHT|MOVE_DOWN) &trans
+&trans &trans    &trans    &trans    &trans    &msc SCRL_UP   &trans                             &mmv (MOVE_LEFT|MOVE_UP)   &trans               &trans              &mmv (MOVE_RIGHT|MOVE_UP)   &trans
+&trans &trans    &mkp RCLK &mkp MCLK &mkp LCLK &msc SCRL_DOWN &mmv (MOVE_LEFT|MOVE_DOWN)  &mmv MOVE_LEFT             &mmv MOVE_DOWN &mmv MOVE_UP  &mmv (MOVE_RIGHT|MOVE_DOWN) &trans
 &trans &trans    &trans    &trans    &trans    &trans         &trans                             &trans                           &trans               &trans              &trans                            &trans
 &trans &trans &trans &trans &trans &trans
                     >;
