@@ -110,12 +110,12 @@
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
 //                      │ ESC  │ TAB  │ RET  ║ BKSP │ SPC  │ CAPS │
-//                      │ (L3) │ (L2) │      ║ (L5) │ (L1) │      │
+//                      │ (L3) │ (L2) │ (L5) ║ (L5) │ (L1) │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
 &trans   &mt_ N1 Q    &mt_ N2 W    &mt_ N3 E    &mt_ N4 R    &mt_ N5 T    &mt_ N6 Y    &mt_ N7 U    &mt_ N8 I    &mt_ N9 O    &mt_ N0 P    &trans
 &trans   &mt_ LSHFT A &mt_ LCTRL S &mt_ LALT D  &mt_ LGUI F  &kp G        &kp H        &mt_ RGUI J  &mt_ RALT K  &mt_ RCTRL L &mt_ RSHFT SEMI &trans
 &trans   &kp Z        &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &mt_ LBKT DOT &lt_ 4 FSLH &trans
-                                   &lt_ 3 ESC   &lt_ 2 TAB   &kp RET      &lt_ 5 BKSP   &lt_ 1 SPC   &caps_word
+                                   &lt_ 3 ESC   &lt_ 2 TAB   &lt_ 5 RET   &lt_ 5 BKSP   &lt_ 1 SPC   &caps_word
                     >;
             };
 
@@ -207,18 +207,18 @@
             mouse_layer {
                     bindings = <
 // ┌──────┬──────┬──────┬──────┬──────┬──────╥──────┬──────┬──────┬──────┬──────┬──────┐
-// │      │      │      │      │      │ SCL↑ ║      │ ↖    │      │      │ ↗    │      │
+// │      │      │      │      │      │ SCL↑ ║ ↖    │      │      │ ↗    │      │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │      │ RCLK │ MCLK │ LCLK │ SCL↓ ║ ↙    │ ←    │ ↓    │ ↑    │ ↘    │      │
+// │      │      │ RCLK │ MCLK │ LCLK │ SCL↓ ║ ←    │ ↓    │ ↑    │ →    │      │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │      │      │      │      │      ║      │      │      │      │      │      │
+// │      │      │      │      │      │      ║ ↙    │      │      │ ↘    │      │      │
 // └──────┴──────┴──────┴──────┴──────┴──────╨──────┴──────┴──────┴──────┴──────┴──────┘
 //                      ┌──────┬──────┬──────╥──────┬──────┬──────┐
-//                      │      │      │      ║      │      │      │
+//                      │      │      │ (L5) ║ (L5) │      │      │
 //                      └──────┴──────┴──────╨──────┴──────┴──────┘
-&trans &trans    &trans    &trans    &trans    &msc SCRL_UP   &trans                             &mmv (MOVE_LEFT|MOVE_UP)   &trans               &trans              &mmv (MOVE_RIGHT|MOVE_UP)   &trans
-&trans &trans    &mkp RCLK &mkp MCLK &mkp LCLK &msc SCRL_DOWN &mmv (MOVE_LEFT|MOVE_DOWN)  &mmv MOVE_LEFT             &mmv MOVE_DOWN &mmv MOVE_UP  &mmv (MOVE_RIGHT|MOVE_DOWN) &trans
-&trans &trans    &trans    &trans    &trans    &trans         &trans                             &trans                           &trans               &trans              &trans                            &trans
+&trans &trans    &trans    &trans    &trans    &msc SCRL_UP   &mmv (MOVE_LEFT|MOVE_UP)   &trans &trans &mmv (MOVE_RIGHT|MOVE_UP) &trans &trans
+&trans &trans    &mkp RCLK &mkp MCLK &mkp LCLK &msc SCRL_DOWN &mmv MOVE_LEFT             &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans
+&trans &trans    &trans    &trans    &trans    &trans         &mmv (MOVE_LEFT|MOVE_DOWN)  &trans &trans &mmv (MOVE_RIGHT|MOVE_DOWN) &trans &trans
 &trans &trans &trans &trans &trans &trans
                     >;
             };
