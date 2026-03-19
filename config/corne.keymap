@@ -40,7 +40,7 @@
         };
         combo_email {
             timeout-ms = <20>;
-            key-positions = <27 28>;
+            key-positions = <25 26>;
             bindings = <&email>;
         };
     };
