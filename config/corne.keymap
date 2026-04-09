@@ -90,6 +90,12 @@
             quick-tap-ms = <180>;
             bindings = <&mo>, <&kp>;
         };
+        lt_cw: layer_tap_caps_word {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            bindings = <&mo>, <&caps_word>;
+        };
     };
 
 // Layer 0
@@ -115,7 +121,7 @@
 &trans   &mt_ N1 Q    &mt_ N2 W    &mt_ N3 E    &mt_ N4 R    &mt_ N5 T    &mt_ N6 Y    &mt_ N7 U    &mt_ N8 I    &mt_ N9 O    &mt_ N0 P    &trans
 &trans   &mt_ LSHFT A &mt_ LCTRL S &mt_ LALT D  &mt_ LGUI F  &kp G        &kp H        &mt_ RGUI J  &mt_ RALT K  &mt_ RCTRL L &mt_ RSHFT SEMI &trans
 &trans   &kp Z        &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &mt_ LBKT DOT &mt_ RBKT FSLH &trans
-                                   &lt_ 3 ESC   &lt_ 2 TAB   &lt_ 5 RET   &lt_ 5 BKSP   &lt_ 1 SPC   &lt_ 4 CAPS
+                                   &lt_ 3 ESC   &lt_ 2 TAB   &lt_ 5 RET   &lt_ 5 BKSP   &lt_ 1 SPC   &lt_ 4 0
                     >;
             };
 
